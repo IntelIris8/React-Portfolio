@@ -1,0 +1,27 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "Our purpose for the interest app is to connect the new paradigm of thinkers, start-ups and businesses, to those in their area, who can be assets to their new business.",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TJ Stephens, Jesse Forte, Reyna Perez, Tim DeGraw, Bethany Pfeister",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "method-override": "^2.3.10",
+    "react-router-dom": "^4.2.2",
+    "routes": "^2.1.0"
+  }
+}
